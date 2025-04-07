@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:lostandfound/model/item_model.dart';
+import 'package:lostandfound/view/add_items/edit_item.dart';
 import 'package:lostandfound/view/add_items/widgets/edit_item_dialougue.dart';
 import 'package:lostandfound/view/delete_item/delete_item_provider.dart';
 import 'package:lostandfound/view/my_data/user_data_provider/user_data_provider.dart';
