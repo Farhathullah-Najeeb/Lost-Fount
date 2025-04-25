@@ -1,12 +1,10 @@
-// ignore_for_file: deprecated_member_use
+// ignore_for_file: deprecated_member_use, use_build_context_synchronously
 
 import 'package:flutter/material.dart';
 import 'package:lostandfound/model/item_model.dart';
 import 'package:lostandfound/view/add_items/edit_item.dart';
-import 'package:lostandfound/view/add_items/widgets/edit_item_dialougue.dart';
 import 'package:lostandfound/view/delete_item/delete_item_provider.dart';
 import 'package:lostandfound/view/my_data/user_data_provider/user_data_provider.dart';
-import 'package:lostandfound/view/police_view/police_view.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 

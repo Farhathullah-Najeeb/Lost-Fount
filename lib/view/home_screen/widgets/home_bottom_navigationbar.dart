@@ -7,8 +7,8 @@ class HomeBottomNavigationBar extends StatelessWidget {
   final Function(int) onTap;
   final Color accentColor;
 
-  // ignore: use_key_in_widget_constructors
   const HomeBottomNavigationBar({
+    super.key,
     required this.currentIndex,
     required this.onTap,
     required this.accentColor,
@@ -40,8 +40,11 @@ class HomeBottomNavigationBar extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               _buildNavItem(0, 'Home', Icons.home_outlined, Icons.home_rounded),
-              _buildAddButton(),
-              _buildNavItem(2, 'Profile', Icons.person_outline_rounded,
+              _buildNavItem(
+                  1, 'My Items', Icons.add_circle_outline, Icons.add_circle),
+              _buildNavItem(
+                  2, 'Emergency', Icons.list_alt_outlined, Icons.list_alt),
+              _buildNavItem(3, 'Profile', Icons.person_outline_rounded,
                   Icons.person_rounded),
             ],
           ),
@@ -95,42 +98,6 @@ class HomeBottomNavigationBar extends StatelessWidget {
               ),
             ),
           ],
-        ),
-      ),
-    );
-  }
-
-  Widget _buildAddButton() {
-    return InkWell(
-      onTap: () => onTap(1),
-      customBorder: const CircleBorder(),
-      child: Container(
-        height: 56,
-        width: 56,
-        margin: const EdgeInsets.symmetric(horizontal: 8),
-        decoration: BoxDecoration(
-          gradient: LinearGradient(
-            begin: Alignment.topLeft,
-            end: Alignment.bottomRight,
-            colors: [
-              accentColor,
-              Color.lerp(accentColor, Colors.blue, 0.3) ?? accentColor,
-            ],
-          ),
-          shape: BoxShape.circle,
-          boxShadow: [
-            BoxShadow(
-              color: accentColor.withOpacity(0.4),
-              blurRadius: 12,
-              spreadRadius: 0,
-              offset: const Offset(0, 4),
-            ),
-          ],
-        ),
-        child: const Icon(
-          Icons.add_rounded,
-          color: Colors.white,
-          size: 32,
         ),
       ),
     );

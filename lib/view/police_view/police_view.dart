@@ -1,9 +1,10 @@
+// ignore_for_file: deprecated_member_use, use_build_context_synchronously
+
 import 'package:flutter/material.dart';
 import 'package:lostandfound/model/police_model.dart';
 import 'package:lostandfound/view/police_view/provider/police_view_provider.dart';
 import 'package:provider/provider.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:flutter/services.dart';
 
 class PolicePage extends StatefulWidget {
   const PolicePage({super.key});
@@ -69,17 +70,6 @@ class _PolicePageState extends State<PolicePage> {
     final colorScheme = Theme.of(context).colorScheme;
 
     return Scaffold(
-      appBar: AppBar(
-        title: Text(
-          'Police Directory',
-          style: TextStyle(
-              fontWeight: FontWeight.w600, color: colorScheme.onPrimary),
-        ),
-        centerTitle: true,
-        backgroundColor: colorScheme.primary,
-        foregroundColor: colorScheme.onPrimary,
-        elevation: 0,
-      ),
       body: RefreshIndicator(
         onRefresh: () => Provider.of<PoliceProvider>(context, listen: false)
             .fetchPoliceData(),

@@ -1,3 +1,5 @@
+// ignore_for_file: avoid_print, use_build_context_synchronously
+
 import 'package:flutter/material.dart';
 import 'package:dio/dio.dart';
 import 'dart:convert';
@@ -58,11 +60,13 @@ class LoginProvider with ChangeNotifier {
         options: Options(headers: headers),
         data: data,
       );
+      
 
       print('Response Status: ${response.statusCode}');
       print('Response Body: ${response.data}');
 
       if (response.statusCode == 200) {
+        
         final responseData = response.data as Map<String, dynamic>;
         _userId = responseData['user_id'];
         print('USER ID: $_userId');

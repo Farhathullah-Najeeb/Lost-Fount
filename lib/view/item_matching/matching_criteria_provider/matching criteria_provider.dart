@@ -1,3 +1,5 @@
+// ignore_for_file: file_names
+
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:lostandfound/config/api_endpoint.dart';

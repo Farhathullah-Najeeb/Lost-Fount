@@ -1,3 +1,5 @@
+// ignore_for_file: deprecated_member_use
+
 import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:lostandfound/model/item_model.dart';
@@ -13,6 +15,7 @@ class ItemImageSection extends StatelessWidget {
   final Color primaryColor;
   final Color accentColor;
 
+  // ignore: use_key_in_widget_constructors
   const ItemImageSection({
     required this.imageFile,
     required this.item,

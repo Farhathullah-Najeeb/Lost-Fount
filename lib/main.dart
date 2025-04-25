@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:lostandfound/view/add_items/add_items_provider/add_items_provider.dart';
-import 'package:lostandfound/view/create_new_item/create_new_item.dart';
 import 'package:lostandfound/view/delete_item/delete_item_provider.dart';
 import 'package:lostandfound/view/get_single_item/get_single_item_provider/get_single_item_provider.dart';
 import 'package:lostandfound/view/get_single_item/get_single_item_view.dart';

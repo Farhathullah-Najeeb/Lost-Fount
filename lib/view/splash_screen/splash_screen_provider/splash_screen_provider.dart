@@ -1,4 +1,6 @@
 // splash_screen_provider.dart
+// ignore_for_file: use_build_context_synchronously
+
 import 'package:flutter/material.dart';
 import 'package:lostandfound/view/login_screen/login_screen_provider/login_screen_provider.dart';
 import 'package:provider/provider.dart';

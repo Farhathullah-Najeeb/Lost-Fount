@@ -1,5 +1,4 @@
-// police_model.dart
-import 'dart:convert';
+
 
 class Police {
   final String badgeNo;

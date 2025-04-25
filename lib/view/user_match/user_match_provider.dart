@@ -2,7 +2,6 @@ import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:lostandfound/config/api_endpoint.dart';
 import 'package:lostandfound/model/user_match_model.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 
 class UserMatchesProvider with ChangeNotifier {
   final Dio _dio = Dio(BaseOptions(

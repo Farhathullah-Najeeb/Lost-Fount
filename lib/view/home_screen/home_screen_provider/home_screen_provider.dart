@@ -1,4 +1,6 @@
 // category_provider.dart
+// ignore_for_file: prefer_final_fields
+
 import 'package:flutter/material.dart';
 import 'package:dio/dio.dart';
 import 'package:lostandfound/config/api_endpoint.dart';
