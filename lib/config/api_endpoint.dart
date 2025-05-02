@@ -2,7 +2,7 @@ class AuthApi {
   final String baseUrl;
 
   // Constructor to allow dynamic base URL
-  AuthApi({this.baseUrl = 'http://192.168.1.11:5001'});
+  AuthApi({this.baseUrl = 'http://192.168.1.8:5001'});
 
   // Existing Endpoints
   String get loginEndpoint => '$baseUrl/api/login';
@@ -15,4 +15,6 @@ class AuthApi {
   String get createMatchEndpoint => '$baseUrl/api/matches';
   String userMatchesEndpoint(int userId) =>
       '$baseUrl/api/users/$userId/matches';
+  String userProfileEndpoint(int userId) =>
+      '$baseUrl/api/users/$userId/profile';
 }

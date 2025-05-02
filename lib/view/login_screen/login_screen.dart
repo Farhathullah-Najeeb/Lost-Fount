@@ -56,6 +56,7 @@ class LoginScreen extends StatelessWidget {
                                 'asset/images/logo.png',
                                 width: 80,
                                 height: 80,
+                                color: Colors.white,
                               ),
                             ),
                             const SizedBox(height: 20),
@@ -89,22 +90,22 @@ class LoginScreen extends StatelessWidget {
                       _buildPasswordField(loginProvider),
 
                       // Forgot Password
-                      Align(
-                        alignment: Alignment.centerRight,
-                        child: TextButton(
-                          onPressed: () {},
-                          style: TextButton.styleFrom(
-                            foregroundColor: Colors.white,
-                          ),
-                          child: Text(
-                            'Forgot Password?',
-                            style: TextStyle(
-                              color: Colors.white.withOpacity(0.9),
-                              fontWeight: FontWeight.w500,
-                            ),
-                          ),
-                        ),
-                      ),
+                      // Align(
+                      //   alignment: Alignment.centerRight,
+                      //   child: TextButton(
+                      //     onPressed: () {},
+                      //     style: TextButton.styleFrom(
+                      //       foregroundColor: Colors.white,
+                      //     ),
+                      //     child: Text(
+                      //       'Forgot Password?',
+                      //       style: TextStyle(
+                      //         color: Colors.white.withOpacity(0.9),
+                      //         fontWeight: FontWeight.w500,
+                      //       ),
+                      //     ),
+                      //   ),
+                      // ),
 
                       const SizedBox(height: 30),
 

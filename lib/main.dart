@@ -16,6 +16,7 @@ import 'package:lostandfound/view/police_view/provider/police_view_provider.dart
 import 'package:lostandfound/view/splash_screen/splash_screen.dart';
 import 'package:lostandfound/view/splash_screen/splash_screen_provider/splash_screen_provider.dart';
 import 'package:lostandfound/view/my_data/user_data_provider/user_data_provider.dart';
+import 'package:lostandfound/view/user_details/provider/user_detils_provider.dart';
 import 'package:lostandfound/view/user_match/user_match_provider.dart';
 import 'package:provider/provider.dart';
 
@@ -34,6 +35,7 @@ void main() {
         ChangeNotifierProvider(create: (context) => PoliceProvider()),
         ChangeNotifierProvider(create: (context) => MatchesProvider()),
         ChangeNotifierProvider(create: (context) => UserMatchesProvider()),
+        ChangeNotifierProvider(create: (context) => UserProvider()),
       ],
       child: const MyApp(),
     ),

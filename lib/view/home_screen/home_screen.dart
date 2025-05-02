@@ -1,11 +1,11 @@
 // ignore_for_file: use_build_context_synchronously, library_private_types_in_public_api
 
 import 'package:flutter/material.dart';
-import 'package:lostandfound/view/add_profile/profile_screen.dart';
 import 'package:lostandfound/view/get_single_item/get_single_item_view.dart';
 import 'package:lostandfound/view/home_screen/widgets/home_appbar.dart';
 import 'package:lostandfound/view/home_screen/widgets/home_bottom_navigationbar.dart';
 import 'package:lostandfound/view/home_screen/widgets/item_card.dart';
+import 'package:lostandfound/view/user_details/user_details_view.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter/services.dart';
 import 'package:lostandfound/model/item_model.dart';
@@ -91,7 +91,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
       floatingActionButton: FloatingActionButton.extended(
         backgroundColor: _primaryColor,
         icon: const Icon(Icons.emergency_outlined, color: Colors.white),
-        label: const Text("Add", style: TextStyle(color: Colors.white)),
+        label:
+            const Text("Add your item", style: TextStyle(color: Colors.white)),
         onPressed: () =>
             _showCreateItemDialog(context), // Updated to show dialog
       ),
@@ -149,7 +150,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
       case 2:
         return PolicePage();
       case 3:
-        return const ProfileScreenContent();
+        return UserProfileScreen();
       default:
         return Container();
     }

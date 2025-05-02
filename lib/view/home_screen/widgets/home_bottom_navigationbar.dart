@@ -40,8 +40,8 @@ class HomeBottomNavigationBar extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               _buildNavItem(0, 'Home', Icons.home_outlined, Icons.home_rounded),
-              _buildNavItem(
-                  1, 'My Items', Icons.add_circle_outline, Icons.add_circle),
+              // _buildNavItem(
+              //     1, 'My Items', Icons.add_circle_outline, Icons.add_circle),
               _buildNavItem(
                   2, 'Emergency', Icons.list_alt_outlined, Icons.list_alt),
               _buildNavItem(3, 'Profile', Icons.person_outline_rounded,
